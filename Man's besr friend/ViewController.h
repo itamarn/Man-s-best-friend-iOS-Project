@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBFDog.h"
+#import "MBFPupy.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) NSMutableArray *dogs;
+@property (nonatomic) int buttonPressedCounter;
 
+@property (strong, nonatomic) IBOutlet UIImageView *myImageView;
+@property (strong, nonatomic) IBOutlet UILabel *nameLable;
+@property (strong, nonatomic) IBOutlet UILabel *breadLable;
+
+
+- (IBAction)nextDogButtonPressed:(id)sender;
+- (IBAction)randomDogButtonPressed:(UIBarButtonItem *)sender;
 @end
 
